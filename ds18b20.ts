@@ -30,14 +30,14 @@ namespace DS18B20 {
     }
     
     //% weight=10 blockId="Temperature_number" 
-    //% block="Temperature_number(C)"
+    //% block="Temperature_number"
     export function Temperature_number(): number {
         // Fake function for simulator
         return Temperature()
     }
     
     //% weight=10 blockId="Temperature_string" 
-    //% block="Temperature_string(C)"
+    //% block="Temperature_string"
     export function Temperature_string() : string{
         let temp = Temperature();
         let x = (temp / 100)
