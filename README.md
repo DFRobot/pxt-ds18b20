@@ -11,10 +11,10 @@
 DS18B20 module, support single bus control, read temperature by pin1.
 
 ## Blocks
-### readTemperature, return a number
+### Read temperature, return a number, makecode do not support floats, so the value is amplifies up to 100 times.
 ![image](https://github.com/DFRobot/pxt-ds18b20/blob/master/image/string.png)<br>
 
-### readTemperature, return a string
+### Read temperature, return a string.
 ![image](https://github.com/DFRobot/pxt-ds18b20/blob/master/image/number.png)<br>
 
 ## Example
@@ -23,7 +23,7 @@ Example for JavaScript
 basic.forever(() => {
     serial.writeLine("temp : "+DS18B20.Temperature_string())
     basic.pause(1000)
-    serial.writeValue("temp : ", DS18B20.Temperature_number())
+    serial.writeValue("temp ", DS18B20.Temperature_number())
     basic.pause(1000)
 })
 ```
