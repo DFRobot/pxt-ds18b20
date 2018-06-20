@@ -21,9 +21,9 @@ DS18B20 module, support single bus control, read temperature by pin1.
 Example for JavaScript
 ```
 basic.forever(() => {
-    serial.writeLine("temp : "+DS18B20.Temp())
+    serial.writeLine("temp : "+DS18B20.Temperature_string())
     basic.pause(1000)
-    serial.writeValue("temp : ", DS18B20.Temperature())
+    serial.writeValue("temp : ", DS18B20.Temperature_number())
     basic.pause(1000)
 })
 ```
