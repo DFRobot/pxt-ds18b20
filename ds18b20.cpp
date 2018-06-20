@@ -164,11 +164,11 @@ class microbitp : public MicroBitComponent
     //%
     int16_t Temperature(int p) {
         if(p == 0)
-          pin = pin0
+          pin = pin0;
         else if(p == 1)
-          pin = pin1
-        else if(p = 2)
-          pin = pin2
+          pin = pin1;
+        else if(p == 2)
+          pin = pin2;
         init();
         writeByte(0xCC);
         convert();
