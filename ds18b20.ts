@@ -10,23 +10,32 @@ namespace DS18B20 {
      * block="Temperature(C)"
      */
 
+     enum pin {
+       //% block=pin0
+       pin0 = 0,
+       //% block=pin1
+       pin1 = 1,
+       //% block=pin2
+       pin2 = 2
+     }
+     
     //% shim=DS18B20::Temperature
-    export function Temperature(): number {
+    export function Temperature(p : number): number {
         // Fake function for simulator
         return 0
     }
     
     //% weight=10 blockId="Temperature_number" 
-    //% block="Temperature_number"
-    export function Temperature_number(): number {
+    //% block="Temperature_number %p"
+    export function Temperature_number(p : pin): number {
         // Fake function for simulator
-        return Temperature()
+        return Temperature(p)
     }
     
     //% weight=10 blockId="Temperature_string" 
-    //% block="Temperature_string"
-    export function Temperature_string() : string{
-        let temp = Temperature();
+    //% block="Temperature_string %p"
+    export function Temperature_string(p : pin) : string{
+        let temp = Temperature(p);
         let x = (temp / 100)
         let y = (temp % 100)
         let z = ''
