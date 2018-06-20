@@ -1,4 +1,4 @@
 {
-  "DS18B20.Temp | block" : "读取温度(字符串)",
-  "DS18B20.Temperature | block" : "读取温度(数字)"
+  "DS18B20.Temperature_string|block" : "读取温度(字符串)",
+  "DS18B20.Temperature_number|block" : "读取温度(数字)"
 }
