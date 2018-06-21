@@ -24,6 +24,7 @@ class microbitp : public MicroBitComponent
         this->pullMode = 1;
         this->status = 0x00;
         this->pin = NULL;
+        pin = new DigitalOut(name);
     }
 
     void disconnect(){ 
@@ -37,12 +38,13 @@ class microbitp : public MicroBitComponent
 
     int setDigitalValue(int value){
         // Move into a Digital input state if necessary.
-        if (!(status & 0x02)){
-            disconnect();
-            pin = new DigitalOut(name);
-            status |= 0x02;
-        }
+        //if (!(status & 0x02)){
+        //    disconnect();
+        //    pin = new DigitalOut(name);
+        //    status |= 0x02;
+        //}
         // Write the value.
+        ((DigitalOut *)pin)->mode(PullNone);
         ((DigitalOut *)pin)->write(value);
         return 0;
     }
