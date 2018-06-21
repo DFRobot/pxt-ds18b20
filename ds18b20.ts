@@ -44,6 +44,7 @@ namespace DS18B20 {
     
     //% weight=10 blockId="Temperature_number" 
     //% block="|%p| Temperature_number "
+    //% p.fieldEditor="gridpicker" p.fieldOptions.columns=4
     export function Temperature_number(p: pin): number {
         // Fake function for simulator
         return Temperature(p)
@@ -51,6 +52,7 @@ namespace DS18B20 {
     
     //% weight=10 blockId="Temperature_string" 
     //% block="|%p| Temperature_string "
+    //% p.fieldEditor="gridpicker" p.fieldOptions.columns=4
     export function Temperature_string(p: pin) : string{
         let temp = Temperature(p);
         let x = (temp / 100)
