@@ -12,6 +12,7 @@ class microbitp : public MicroBitComponent
     void *pin;
     int id;
     int status;
+    int val;
     PinCapability capability;
     uint8_t pullMode;
     PinName name;
@@ -23,29 +24,45 @@ class microbitp : public MicroBitComponent
         this->pullMode = 1;
         this->status = 0x00;
         this->pin = NULL;
-        connect();
+        this->val = 0;
     }
-    ~microbitp(){
+    void deletep(){
+        val -= 1;
+        printf("val = %d\n",val);
         if (status & 0x01)
             delete ((DigitalIn *)pin);
         if (status & 0x02)
             delete ((DigitalOut *)pin);
     }
-    
-    void connect(){ 
-        pin = new DigitalOut(name);
+
+    void disconnect(){
+        
+        if (status & 0x01){
+            delete ((DigitalIn *)pin);
+            val -= 1;
+        }
+        if (status & 0x02){
+            delete ((DigitalOut *)pin);
+            val -= 1;
+        }
     }
 
     int setDigitalValue(int value){
-        status = 1;
+        if (!(status & 0x02)){
+            disconnect();
+            val += 1;
+            pin = new DigitalOut(name);
+            status = 0x02;
+        }
         // Write the value.
         ((DigitalOut *)pin)->write(value);
         return 0;
     }
 
     int getDigitalValue(){
-        status = 2;
+        
         ((DigitalIn *)pin)->mode(PullNone);
+        status = 0x01;
         return ((DigitalIn *)pin)->read();
 //          return 0;
     }
@@ -163,7 +180,7 @@ class microbitp : public MicroBitComponent
         writeByte(0xBE);
         int b1 = readByte();
         int b2 = readByte();
-
+        pin.deletep();
         int16_t temp = (b2 << 8 | b1);
         return temp * 100 / 16;
     }
