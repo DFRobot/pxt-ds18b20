@@ -65,22 +65,22 @@ class microbitp : public MicroBitComponent
     microbitp  pin0(7, MICROBIT_PIN_P0, PIN_CAPABILITY_ALL);
     microbitp  pin1(8, MICROBIT_PIN_P1, PIN_CAPABILITY_ALL);
     microbitp  pin2(9, MICROBIT_PIN_P2, PIN_CAPABILITY_ALL);
-    microbitp  pin3(10, MICROBIT_PIN_P3, PIN_CAPABILITY_ALL),
-    microbitp  pin4(11, MICROBIT_PIN_P4, PIN_CAPABILITY_ALL),             //COL2 (ANALOG/DIGITAL)
-    microbitp  pin5(12, MICROBIT_PIN_P5, PIN_CAPABILITY_STANDARD),        //BTN_A
-    microbitp  pin6(13, MICROBIT_PIN_P6, PIN_CAPABILITY_STANDARD),        //ROW2
-    microbitp  pin7(14, MICROBIT_PIN_P7, PIN_CAPABILITY_STANDARD),        //ROW1
-    microbitp  pin8(15, MICROBIT_PIN_P8, PIN_CAPABILITY_STANDARD),        //PIN 18
-    microbitp  pin9(16, MICROBIT_PIN_P9, PIN_CAPABILITY_STANDARD),        //ROW3
-    microbitp  pin10(17,MICROBIT_PIN_P10,PIN_CAPABILITY_ALL),             //COL3 (ANALOG/DIGITAL)
-    microbitp  pin11(18,MICROBIT_PIN_P11,PIN_CAPABILITY_STANDARD),        //BTN_B
-    microbitp  pin12(19,MICROBIT_PIN_P12,PIN_CAPABILITY_STANDARD),        //PIN 20
-    microbitp  pin13(20,MICROBIT_PIN_P13,PIN_CAPABILITY_STANDARD),        //SCK
-    microbitp  pin14(21,MICROBIT_PIN_P14,PIN_CAPABILITY_STANDARD),        //MISO
-    microbitp  pin15(22,MICROBIT_PIN_P15,PIN_CAPABILITY_STANDARD),        //MOSI
-    microbitp  pin16(23,MICROBIT_PIN_P16,PIN_CAPABILITY_STANDARD),        //PIN 16
-    microbitp  pin19(24,MICROBIT_PIN_P19,PIN_CAPABILITY_STANDARD),        //SCL
-    microbitp  pin20(25,MICROBIT_PIN_P20,PIN_CAPABILITY_STANDARD)         //SDA
+    microbitp  pin3(10, MICROBIT_PIN_P3, PIN_CAPABILITY_ALL);
+    microbitp  pin4(11, MICROBIT_PIN_P4, PIN_CAPABILITY_ALL);             //COL2 (ANALOG/DIGITAL)
+    microbitp  pin5(12, MICROBIT_PIN_P5, PIN_CAPABILITY_STANDARD);        //BTN_A
+    microbitp  pin6(13, MICROBIT_PIN_P6, PIN_CAPABILITY_STANDARD);        //ROW2
+    microbitp  pin7(14, MICROBIT_PIN_P7, PIN_CAPABILITY_STANDARD);        //ROW1
+    microbitp  pin8(15, MICROBIT_PIN_P8, PIN_CAPABILITY_STANDARD);        //PIN 18
+    microbitp  pin9(16, MICROBIT_PIN_P9, PIN_CAPABILITY_STANDARD);        //ROW3
+    microbitp  pin10(17,MICROBIT_PIN_P10,PIN_CAPABILITY_ALL);             //COL3 (ANALOG/DIGITAL)
+    microbitp  pin11(18,MICROBIT_PIN_P11,PIN_CAPABILITY_STANDARD);        //BTN_B
+    microbitp  pin12(19,MICROBIT_PIN_P12,PIN_CAPABILITY_STANDARD);        //PIN 20
+    microbitp  pin13(20,MICROBIT_PIN_P13,PIN_CAPABILITY_STANDARD);        //SCK
+    microbitp  pin14(21,MICROBIT_PIN_P14,PIN_CAPABILITY_STANDARD);        //MISO
+    microbitp  pin15(22,MICROBIT_PIN_P15,PIN_CAPABILITY_STANDARD);        //MOSI
+    microbitp  pin16(23,MICROBIT_PIN_P16,PIN_CAPABILITY_STANDARD);        //PIN 16
+    microbitp  pin19(24,MICROBIT_PIN_P19,PIN_CAPABILITY_STANDARD);        //SCL
+    microbitp  pin20(25,MICROBIT_PIN_P20,PIN_CAPABILITY_STANDARD);         //SDA
     
     microbitp  pin = pin0;
 
