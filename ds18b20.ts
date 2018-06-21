@@ -17,22 +17,10 @@ namespace DS18B20 {
        pin1 = 1,
        //% block=pin2
        pin2 = 2,
-       //% block=pin3
-       pin3 = 3,
-       //% block=pin4
-       pin4 = 4,
        //% block=pin5
        pin5 = 5,
-       //% block=pin6
-       pin6 = 6,
-       //% block=pin7
-       pin7 = 7,
        //% block=pin8
        pin8 = 8,
-       //% block=pin9
-       pin9 = 9,
-       //% block=pin10
-       pin10 = 10,
        //% block=pin11
        pin11 = 11,
        //% block=pin12
@@ -44,11 +32,7 @@ namespace DS18B20 {
        //% block=pin15
        pin15 = 15,
        //% block=pin16
-       pin16 = 16,
-       //% block=pin19
-       pin19 = 19,
-       //% block=pin20
-       pin20 = 20
+       pin16 = 16
      }
      
      
