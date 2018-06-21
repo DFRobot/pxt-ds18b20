@@ -58,6 +58,23 @@ namespace DS18B20 {
         let x = (temp / 100)
         let y = (temp % 100)
         let z = ''
+        if(temp >= 0){
+          if(y < 10){
+            z = x.toString() + '.0' + y.toString()
+          }
+          else{
+            z = x.toString() + '.' + y.toString()
+          }
+        }
+        else if(temp < 0){
+          if(y > -10){
+            z = '-' + (-x).toString() + '.0' + (-y).toString()
+          }
+          else{
+            z = '-' + (-x).toString() + '.' + (-y).toString()
+          }
+        }
+        /*
         if((y < 10)&&(y >= 0)){
             z = x.toString() + '.0' + y.toString()
         }
@@ -76,6 +93,7 @@ namespace DS18B20 {
         else if((y < -10)&&(x!=0)){
             z = x.toString() + '.' + (-y).toString()
         }
+        */
         return z
     }
 }
