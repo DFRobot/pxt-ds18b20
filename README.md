@@ -8,7 +8,7 @@
 * [License](#license)
 
 ## Summary
-DS18B20 module, support single bus control, read temperature by pin1.
+DS18B20 module, support single bus control, read temperature by pin0/pin1/pin2.
 
 ## Blocks
 ### Read temperature, return a number, makecode do not support floats, so the value is amplifies up to 100 times.
