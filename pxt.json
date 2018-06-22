@@ -8,7 +8,7 @@
     },
     "files": [
         "README.md",
-        "ds18b20.ts",
+        "main.ts",
         "ds18b20.cpp",
         "_locales/zh/ds18b20-strings.json"
     ],

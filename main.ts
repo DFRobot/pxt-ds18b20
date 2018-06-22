@@ -1,8 +1,5 @@
 //% color=#5042f4 icon="\uf2c9"
 namespace DS18B20 {
-
-    // Functions for interfacing with the DS1820
-
     /**
      * Reads the temperature from the one-wire temperature sensor.
      * Returns a 4 digit number. value should be divided by 100 to get 
