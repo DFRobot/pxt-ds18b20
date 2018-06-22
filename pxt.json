@@ -10,7 +10,6 @@
         "README.md",
         "ds18b20.ts",
         "ds18b20.cpp",
-        "shims.d.ts",
         "_locales/zh/ds18b20-strings.json"
     ],
     "testFiles": [
