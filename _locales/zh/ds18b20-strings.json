@@ -1,4 +1,15 @@
 {
   "DS18B20.Temperature_string|block": "读取温度(字符串)",
-  "DS18B20.Temperature_number|block": "读取温度(数字)"
+  "DS18B20.Temperature_number|block": "读取温度(数字)",
+  "DS18B20.pin.pin0|block": "引脚0",
+  "DS18B20.pin.pin1|block": "引脚1",
+  "DS18B20.pin.pin2|block": "引脚2",
+  "DS18B20.pin.pin5|block": "引脚5",
+  "DS18B20.pin.pin8|block": "引脚8",
+  "DS18B20.pin.pin11|block": "引脚11",
+  "DS18B20.pin.pin12|block": "引脚12",
+  "DS18B20.pin.pin13|block": "引脚13",
+  "DS18B20.pin.pin14|block": "引脚14",
+  "DS18B20.pin.pin15|block": "引脚15",
+  "DS18B20.pin.pin16|block": "引脚16"
 }
