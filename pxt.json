@@ -1,19 +1,20 @@
 {
-    "name": "DS18B20",
+    "name": "ds18b20",
     "version": "0.0.0",
-    "description": "This library is DS18B20",
+    "description": "ds18b20",
     "license": "MIT",
     "dependencies": {
-        "core": "*"
+        "core": "*",
+        "radio": "*"
     },
     "files": [
         "README.md",
         "main.ts",
-        "ds18b20.cpp",
-        "_locales/zh/ds18b20-strings.json"
+        "_locales/zh/ds18b20-strings.json",
+        "ds18b20.cpp"
     ],
     "testFiles": [
-        "tests.ts"
+        "test.ts"
     ],
     "public": false
 }
