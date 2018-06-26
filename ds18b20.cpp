@@ -127,7 +127,7 @@ class microbitp : public MicroBitComponent
         volatile int i;
         pin.setDigitalValue(0);
         pin.setDigitalValue(1);
-        for (i = 1; i < 20; i++);
+        //for (i = 1; i < 20; i++);
         int b = pin.getDigitalValue();
         for (i = 1; i < 60; i++);
         return b;
