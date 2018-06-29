@@ -290,6 +290,7 @@ namespace DS18B20 {
       _datapin.write(1);
       wait_us(20);
       _datapin.input();       // let the data line float high
+      wait_us(25);
       if (_datapin.read() == 0) // see if any devices are pulling the data line low
         presence = true;
       wait_us(120);
