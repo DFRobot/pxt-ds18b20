@@ -1,6 +1,6 @@
 {
     "name": "ds18b20",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "description": "DFRobot pxt-ds18b20,read temperature by ds18b20",
     "license": "MIT",
     "dependencies": {
