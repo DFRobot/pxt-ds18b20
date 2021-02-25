@@ -34,7 +34,6 @@ namespace DS18B20 {
      
     //% shim=DS18B20::Temperature
     export function Temperature(p: number): number {
-        // Fake function for simulator
         return 0
     }
     
@@ -44,7 +43,7 @@ namespace DS18B20 {
     export function TemperatureNumber(p: pin): number {
         // Fake function for simulator
       
-        return Math.round(Temperature(p) / 100)
+        return Math.round(Temperature(p)/10)
     }
     
     //% weight=10 blockId="Temperature_string" 
@@ -52,8 +51,8 @@ namespace DS18B20 {
     //% p.fieldEditor="gridpicker" p.fieldOptions.columns=4
     export function TemperatureString(p: pin) : string{
         let temp = Temperature(p);
-        let x = Math.round((temp / 100))
-        let y = Math.round((temp % 100))
+        let x = Math.round((temp / 10 ))
+        let y = Math.round((temp % 10))
         let z = ''
         if(temp >= 0){
           if(y < 10){
